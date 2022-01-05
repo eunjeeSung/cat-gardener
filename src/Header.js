@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Title = styled.h1`
   color: black;
   text-align: center;
+  font-weight: bold;
 `;
 
 const Description = styled.h3`
@@ -13,7 +14,7 @@ const Description = styled.h3`
 const Header = () => {
   return <div>
     <Title>고양이 정원사</Title>
-    <Description>이 식물은 고양이에게 안전한가요?</Description>
+    <Description>어떤 식물이 고양이에게 안전할까요?</Description>
   </div>
 };
 

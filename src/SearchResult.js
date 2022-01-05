@@ -2,16 +2,18 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 
 const StyledSearchResult = styled.h4`
-  color: "green";
+  color: #265a43;
+  margin: 2em 1em 1em 1em;
+  text-align: center;
 `;
 
 const Button = styled.a`
-  color: palevioletred;
-  font-size: 1em;
+  color: #265a43;
+  font-size: 0.5em;
   margin: 1em;
   padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
+  border: 2px solid #265a43;
+  border-radius: 10px;
   text-decoration: none;
 `;
 
