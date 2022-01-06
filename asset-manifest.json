@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cat-gardener/static/css/main.8427af64.css",
-    "main.js": "/cat-gardener/static/js/main.f3708206.js",
+    "main.js": "/cat-gardener/static/js/main.dbb09d7e.js",
     "static/media/cat.png": "/cat-gardener/static/media/cat.886904b8e55ac83bbece.png",
     "index.html": "/cat-gardener/index.html",
     "main.8427af64.css.map": "/cat-gardener/static/css/main.8427af64.css.map",
-    "main.f3708206.js.map": "/cat-gardener/static/js/main.f3708206.js.map"
+    "main.dbb09d7e.js.map": "/cat-gardener/static/js/main.dbb09d7e.js.map"
   },
   "entrypoints": [
     "static/css/main.8427af64.css",
-    "static/js/main.f3708206.js"
+    "static/js/main.dbb09d7e.js"
   ]
 }
