@@ -5,6 +5,8 @@ import SearchBox from "./SearchBox";
 import Header from "./Header";
 import useSearchResult from "./SearchResult";
 
+import './style.css';
+
 const StyledAppBox = styled.div`
   margin-top: 10%;
 `;
