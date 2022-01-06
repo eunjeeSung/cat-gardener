@@ -1,21 +1,37 @@
 import styled from "styled-components";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const StyledSearchResult = styled.h4`
-  color: #265a43;
-  margin: 2em 1em 1em 1em;
+  color: #fff4e8;
+  margin: 2em auto;
   text-align: center;
+  width: 80%;
+  max-width: 500px;
 `;
 
-const Button = styled.a`
+const StyledButton = styled.a`
   color: #265a43;
   font-size: 0.5em;
   margin: 1em;
   padding: 0.25em 1em;
-  border: 2px solid #265a43;
+  background-color: #fff4e8;
+  border: 2px solid #fff4e8;
   border-radius: 10px;
   text-decoration: none;
 `;
+
+const StyledButtonWrap = styled.div`
+  display: inline-block;
+`;
+
+function ReferenceButton(props) {
+  const { result } = props;
+  return (
+    <StyledButtonWrap>
+      <StyledButton href={result[0].url} target="_blank">원문 보기</StyledButton>
+    </StyledButtonWrap>
+  );
+}
 
 export default function useSearchResult() {
   const [result, setResult] = useState(null);
@@ -29,14 +45,14 @@ export default function useSearchResult() {
     resultItem = (
       <StyledSearchResult>
         {`${result[0].name}은(는) 고양이에게 🚨위험해요`}
-        <Button href={result[0].url} target="_blank">원문 보기</Button>
+        <ReferenceButton result={ result } />
       </StyledSearchResult>
     );
   } else if(result.length !== 0 && result[0].danger === "안전") {
     resultItem = (
       <StyledSearchResult>
         {`${result[0].name}은(는) 고양이에게 안전해요 🥳`}
-        <Button href={result[0].url} target="_blank">원문 보기</Button>
+        <ReferenceButton result={ result } />
       </StyledSearchResult>
     );
   } else {
